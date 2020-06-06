@@ -194,3 +194,35 @@ console.log(checkSign(-1));
 /* "use strict"; would be used to follow or find coding mistakes. */
 /* if you don't want to change the variable value again and again use const VARIABLE */
 
+//Arrow or annoymous function
+var date = () => new Date().getTime();
+console.log(date);
+
+//Function taking function as argutment
+// we use fliter and map
+
+//Destructing object
+var voxel = {x:3.6,y:7.4}
+//old way
+var x = voxel.x;
+var y = voxel.y;
+//new way
+const {x:an,y:bn} = voxel;
+console.log(an);
+
+//Building string
+var name = "Vishnu";
+var stringS = `Hello welcome ${name}`;
+console.log(stringS);
+
+//Creating a class
+class spaceShuttle{
+    constructor(targetPlanet){
+        this.targetPlanet = targetPlanet;
+    }
+    test(){
+        console.log("test");
+    }
+}
+var test = new spaceShuttle("hello");
+test.test();
